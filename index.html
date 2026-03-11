@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Benneth Affordable House and Lot - Trusted real estate in Novaliches, Quezon City and surrounding areas. Pag-IBIG & bank financing available." />
+  <meta name="keywords" content="affordable house and lot, Novaliches, Quezon City, Philippines, real estate, Pag-IBIG financing, property for sale, lot for sale, Benneth" />
+  <meta name="author" content="Benneth Affordable House and Lot" />
+  <title>Home - Benneth Affordable House and Lot</title>
+  <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+  <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="lib/css/fontawesome.css" />
+  <link rel="stylesheet" href="lib/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/border.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/benneth.css" />
+</head>
+
+<body>
+  <div class="slideshow">
+    <!-- Navbar Start -->
+    <nav class="navbar d-flex justify-content-center py-2 navbar-border z-2">
+      <div class="navbar-size">
+        <div class="container-lg d-flex justify-content-between px-0">
+          <div class="d-none d-sm-flex align-items-center gap-3">
+            <a href="https://www.facebook.com/BennethAffordableHouseandLot" target="_blank" class="social-icon-32"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="viber://chat?number=09760907814" class="social-icon-32"><i class="fa-brands fa-viber"></i></a>
+            <a href="tel:09760907814" class="social-icon-32"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <a class="navbar-brand nav-logo-wrapper mx-0" href="index.html">
+            <img src="img/benneth-logo.jpg" alt="Benneth Affordable House and Lot" class="nav-logo img-fluid mx-auto" style="max-height:52px;object-fit:contain;" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="d-flex c-white custom-toggler align-items-center gap-3">
+              Menu
+              <span class="custom-toggler-icon">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+              </span>
+            </span>
+          </button>
+          <!-- Offcanvas Menu -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="img/benneth-logo.jpg" class="nav-logo mt-3" alt="Benneth Logo" style="max-height:52px;object-fit:contain;" />
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body mt-3">
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+                  <button class="nav-link dropdown-toggle" id="listingDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="d-flex align-items-start">Listings <i id="listingDropdownIcon" class="fa-solid fa-plus dropdown-icon-size ms-2 mt-2"></i></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="listingDropdown">
+                    <li><a class="dropdown-item" href="property-listings.html">All Properties</a></li>
+                    <li><a class="dropdown-item" href="property-detail.html">Property Detail</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="nav-link dropdown-toggle" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="d-flex align-items-start">Services <i id="ServicesDropdownIcon" class="fa-solid fa-plus dropdown-icon-size ms-2 mt-2"></i></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                    <li><a class="dropdown-item" href="services-detail.html">Service Detail</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="nav-link dropdown-toggle" id="pagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="d-flex align-items-start">Pages <i id="pagesDropdownIcon" class="fa-solid fa-plus dropdown-icon-size ms-2 mt-2"></i></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                    <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="blog-post.html">Blog / Tips</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="alert-container"></div>
+      </div>
+    </nav>
+    <div class="py-5"></div>
+    <!-- Hero Start -->
+    <div class="page-size pt-4 pt-sm-5 position-relative z-1">
+      <h1 class="c-white text-center col-12 col-lg-8 mx-auto fade-in-up">
+        Your Dream Home is <em class="ff-playfair">Affordable</em> and
+        <em class="ff-playfair">Within Reach</em>
+      </h1>
+      <p class="c-white text-center col-12 col-lg-6 mx-auto mt-4 pt-2 fade-in-up">
+        Benneth Affordable House and Lot connects Filipino families with quality homes in Quezon City,
+        Cavite, Bulacan, Batangas, and Tagaytay — with flexible Pag-IBIG and bank financing options.
+      </p>
+      <div class="d-flex justify-content-center mt-4 pt-2">
+        <a href="property-listings.html" class="btn-1 fade-in-up">View Listings ></a>
+      </div>
+      <div class="d-flex mt-4 fade-in-up justify-content-center justify-content-lg-start">
+        <div class="">
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <div><img src="img/testimonial-1.jpg" alt="client" class="testimonial-circle" /></div>
+            <div><img src="img/testimonial-2.jpg" alt="client" class="testimonial-circle testimonial-margin" /></div>
+            <div><img src="img/testimonial-3.jpg" alt="client" class="testimonial-circle testimonial-margin" /></div>
+            <div><img src="img/testimonial-4.jpg" alt="client" class="testimonial-circle testimonial-margin" /></div>
+          </div>
+          <p class="testimonial-subtitle col-8 mt-2 text-center text-lg-start mx-auto mx-lg-0">
+            Trusted by hundreds of Filipino families — from first-time buyers to OFW investors
+          </p>
+        </div>
+        <div class="d-none d-lg-flex gap-4 mt-5">
+          <input type="text" class="hero-form mt-1" placeholder="Location (e.g. Novaliches, QC)" />
+          <select class="hero-form-select">
+            <option value="" disabled selected>Budget</option>
+            <option value="500k-1.5m">&#8369;500K &ndash; &#8369;1.5M</option>
+            <option value="1.5m-3m">&#8369;1.5M &ndash; &#8369;3M</option>
+            <option value="3m-5m">&#8369;3M &ndash; &#8369;5M</option>
+            <option value="5m+">&#8369;5M+</option>
+          </select>
+          <select class="hero-form-select">
+            <option value="" disabled selected>Type</option>
+            <option value="house-lot">House &amp; Lot</option>
+            <option value="lot-only">Lot Only</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="condo">Condo</option>
+          </select>
+          <a href="property-listings.html" class="social-icon-32 mt-2"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+  </div>
+
+  <!-- About Start -->
+  <div class="bg-subtle">
+    <div class="page-size overflow-hidden">
+      <span class="subtitle fade-in-up">about us</span>
+      <h2 class="col-12 col-lg-7 mt-3 fade-in-up">
+        Making Home Ownership <i class="ff-playfair">Possible</i> for Every
+        <i class="ff-playfair">Filipino Family</i>
+      </h2>
+      <div class="container px-0 fade-in-up">
+        <div class="row row-cols-1 row-cols-lg-2 g-5 my-1">
+          <div class="col">
+            <p class="c-heading-2">
+              At Benneth Affordable House and Lot, we believe every Filipino family deserves a safe, comfortable,
+              and affordable home. Based in Novaliches, Quezon City, we have helped hundreds of families find
+              their perfect property across Metro Manila and the provinces.
+            </p>
+          </div>
+          <div class="col">
+            <p class="c-heading-2">
+              From first-time homebuyers to OFW investors, we offer a wide range of properties with flexible
+              payment terms and personalized support — from your first inquiry all the way to the day you
+              receive your keys.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2 g-5">
+          <div class="col">
+            <h5>Our Vision</h5>
+            <p class="c-heading-2 my-4">
+              To be the most trusted and accessible real estate brand in the Philippines — making home
+              ownership a reality for every Filipino family, regardless of budget.
+            </p>
+            <h5>Our Mission</h5>
+            <ul class="c-heading-2 my-4">
+              <li><i class="fa-solid fa-check me-2"></i>Connecting families with quality, affordable properties</li>
+              <li><i class="fa-solid fa-check me-2"></i>Providing honest, transparent real estate guidance</li>
+              <li><i class="fa-solid fa-check me-2"></i>Making Pag-IBIG &amp; bank financing accessible</li>
+              <li><i class="fa-solid fa-check me-2"></i>Supporting OFWs with 100% online processing</li>
+              <li><i class="fa-solid fa-check me-2"></i>Building trust through every successful home sale</li>
+            </ul>
+            <div class="about-card d-flex justify-content-between align-items-center mt-4">
+              <div>
+                <h3 class="c-white">Start Your <i class="ff-playfair">Property</i></h3>
+                <h3 class="c-white">Search Today!</h3>
+              </div>
+              <div>
+                <a href="contact.html" class="btn-1 p-2 me-4">Contact Us ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-stretch">
+            <img src="img/about-1.jpg" alt="Beautiful affordable home in the Philippines" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <p class="mt-5 fade-in-up">Accredited with trusted Philippine financing institutions to help you own your dream home</p>
+      <div class="swiper-container mt-1 fade-in-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/logo-1.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-2.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-3.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-4.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-5.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-6.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-7.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-8.png" alt="Partner" /></div>
+          <div class="swiper-slide"><img src="img/logo-9.png" alt="Partner" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Services Start -->
+  <div class="bg-accent">
+    <div class="page-size">
+      <div class="d-flex flex-column justify-content-center align-items-center fade-in-up">
+        <span class="subtitle my-3">Our Services</span>
+        <h2 class="col-12 col-lg-6 text-center pb-5">
+          Complete Real Estate Services <i class="ff-playfair">Tailored</i> for
+          <i class="ff-playfair">Filipinos</i>
+        </h2>
+      </div>
+      <div class="container-lg px-0 overflow-hidden pt-5">
+        <div class="row row-cols-1 row-cols-lg-3 g-5 py-lg-4 border-lg-top fade-in-up">
+          <div class="col my-2">
+            <div class="d-flex gap-4">
+              <img src="icon/icon-1.png" alt="icon" class="services-icon" />
+              <div>
+                <h5>House &amp; Lot Sales</h5>
+                <p>Find your perfect family home in Metro Manila and nearby provinces. We handle everything from viewing to turnover.</p>
+                <a href="services-detail.html" class="link-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2 border-top border-lg-top-0">
+            <div class="d-flex gap-4 mt-3 mt-lg-0">
+              <img src="icon/icon-2.png" alt="icon" class="services-icon" />
+              <div>
+                <h5>Lot-Only Properties</h5>
+                <p>Purchase residential or commercial lots in high-growth areas at competitive prices — ideal for investors.</p>
+                <a href="services-detail.html" class="link-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2 border-top border-lg-top-0">
+            <div class="d-flex gap-4 mt-3 mt-lg-0">
+              <img src="icon/icon-3.png" alt="icon" class="services-icon" />
+              <div>
+                <h5>Pag-IBIG Financing</h5>
+                <p>We assist with Pag-IBIG housing loan applications — monthly amortizations starting as low as &#8369;2,000/month.</p>
+                <a href="services-detail.html" class="link-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-5 py-lg-4 border-lg-top border-lg-bottom mt-1 fade-in-up">
+          <div class="col my-2 border-top border-lg-top-0">
+            <div class="d-flex gap-4 mt-3 mt-lg-0">
+              <img src="icon/icon-4.png" alt="icon" class="services-icon" />
+              <div>
+                <h5>Bank Financing</h5>
+                <p>We connect buyers with trusted Philippine banks offering competitive housing loan rates and flexible terms.</p>
+                <a href="services-detail.html" class="link-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2 border-top border-lg-top-0">
+            <div class="d-flex gap-4 mt-3 mt-lg-0">
+              <img src="icon/icon-5.png" alt="icon" class="services-icon" />
+              <div>
+                <h5>OFW Assistance</h5>
+                <p>100% online processing for overseas Filipino workers. Invest in real estate from anywhere in the world.</p>
+                <a href="services-detail.html" class="link-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2 border-top border-bottom border-lg-top-0 border-lg-bottom-0">
+            <div class="d-flex gap-4 mt-3 mb-3 mt-lg-0">
+              <img src="icon/icon-6.png" alt="icon" class="services-icon" />
+              <div>
+                <h5>Free Consultation</h5>
+                <p>Get a free property consultation and find out which financing option fits your budget and lifestyle goals.</p>
+                <a href="contact.html" class="link-1">Book Now ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services End -->
+
+  <!-- Listing Start -->
+  <div class="bg-subtle">
+    <div class="page-size">
+      <div class="row row-cols-1 row-cols-lg-2 g-5 fade-in-up">
+        <div class="d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+          <span class="subtitle">featured properties</span>
+          <h2 class="mt-3 text-center text-lg-start">
+            Explore Our <i class="ff-playfair">Affordable</i>
+            <i class="ff-playfair">Properties</i>
+          </h2>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-end">
+          <p class="col-12 col-lg-8 text-center text-lg-start">
+            Quality homes in prime locations across Metro Manila, Cavite, Bulacan, Batangas, and Tagaytay
+            — with Pag-IBIG and bank financing available.
+          </p>
+          <a href="property-listings.html" class="btn-2">More Listings &gt;</a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4 mt-4 fade-in-up">
+        <div class="col">
+          <div class="bg-listing-1 d-flex align-items-end">
+            <div style="z-index:5" class="w-100">
+              <span class="text-listing">Novaliches, Quezon City</span>
+              <h4 class="c-white my-4">2-Bedroom Starter Home</h4>
+              <div class="d-flex gap-4">
+                <div class="text-listing"><i class="fa-solid fa-bed c-white me-2"></i>2 beds</div>
+                <div class="text-listing"><i class="fa-solid fa-house c-white me-2"></i>36 sqm</div>
+                <div class="text-listing"><i class="fa-solid fa-ruler-combined c-white me-2"></i>1 floor</div>
+                <div class="text-listing"><i class="fa-solid fa-bath c-white me-2"></i>1 ba</div>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <h5 class="c-white">&#8369;1.2M</h5>
+                <a href="property-detail.html" class="btn-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-listing-3 d-flex align-items-end">
+            <div style="z-index:5" class="w-100">
+              <span class="text-listing">Dasmarinas, Cavite</span>
+              <h4 class="c-white my-4">3-Bedroom Family House</h4>
+              <div class="d-flex gap-4">
+                <div class="text-listing"><i class="fa-solid fa-bed c-white me-2"></i>3 beds</div>
+                <div class="text-listing"><i class="fa-solid fa-house c-white me-2"></i>60 sqm</div>
+                <div class="text-listing"><i class="fa-solid fa-ruler-combined c-white me-2"></i>2 floors</div>
+                <div class="text-listing"><i class="fa-solid fa-bath c-white me-2"></i>2 ba</div>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <h5 class="c-white">&#8369;2.8M</h5>
+                <a href="property-detail.html" class="btn-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-listing-2 d-flex align-items-end">
+            <div style="z-index:5" class="w-100">
+              <span class="text-listing">Tagaytay City, Cavite</span>
+              <h4 class="c-white my-4">Tagaytay Lot — Cool Climate</h4>
+              <div class="d-flex gap-4">
+                <div class="text-listing"><i class="fa-solid fa-tree c-white me-2"></i>Lot Only</div>
+                <div class="text-listing"><i class="fa-solid fa-house c-white me-2"></i>120 sqm</div>
+                <div class="text-listing"><i class="fa-solid fa-mountain c-white me-2"></i>View</div>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <h5 class="c-white">&#8369;1.8M</h5>
+                <a href="property-detail.html" class="btn-1">Learn More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Listing End -->
+
+  <!-- Why Choose Us Start -->
+  <div class="bg-why-choose-us">
+    <div class="page-size h-100">
+      <div class="container-lg px-0">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="pb-5 fade-in-up">
+              <span class="subtitle c-white">why choose us</span>
+              <h2 class="c-white mt-4">
+                Affordable, <i class="ff-playfair">Trusted,</i> and
+                <i class="ff-playfair">Family-First</i>
+              </h2>
+              <p class="c-white mt-5">
+                Benneth Affordable House and Lot puts Filipino families first. We provide honest advice,
+                flexible payment options, and dedicated support — from your first inquiry to the day
+                you receive your keys.
+              </p>
+            </div>
+            <div class="d-flex flex-column flex-md-row gap-5 align-self-end pt-1 mt-1 pt-lg-5 mt-lg-5 fade-in-up" id="counters">
+              <div>
+                <span class="head-why-choose-us">Happy Families</span>
+                <h2 class="c-white" id="activeAgent">0+</h2>
+              </div>
+              <div>
+                <span class="head-why-choose-us">Client Satisfaction</span>
+                <h2 class="c-white" id="clientSatisfaction">0%</h2>
+              </div>
+              <div>
+                <span class="head-why-choose-us">Properties Available</span>
+                <h2 class="c-white" id="propertyListings">0+</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Why Choose Us End -->
+
+  <!-- Gallery Start -->
+  <div class="bg-subtle">
+    <div class="page-size">
+      <div class="d-flex flex-column align-items-center mb-4 fade-in-up">
+        <span class="subtitle">our properties</span>
+        <h2 class="mt-3 text-center">A Glimpse of <i class="ff-playfair">Our</i> <i class="ff-playfair">Homes</i></h2>
+      </div>
+      <div class="container d-flex flex-column gap-3 px-0">
+        <div class="row row-cols-1 g-3 row-cols-sm-3 fade-in-up">
+          <img src="img/gallery-1.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-1.jpg" />
+          <img src="img/gallery-2.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-2.jpg" />
+          <img src="img/gallery-3.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-3.jpg" />
+        </div>
+        <div class="row row-cols-1 g-3 row-cols-sm-2 fade-in-up">
+          <img src="img/gallery-4.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-4.jpg" />
+          <img src="img/gallery-5.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-5.jpg" />
+        </div>
+        <div class="row row-cols-1 g-3 row-cols-sm-3 fade-in-up">
+          <img src="img/gallery-6.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-6.jpg" />
+          <img src="img/gallery-7.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-7.jpg" />
+          <img src="img/gallery-8.jpg" alt="property" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/gallery-8.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery End -->
+
+  <!-- Testimonials Start -->
+  <div class="bg-subtle">
+    <div class="page-size overflow-hidden">
+      <div class="d-block d-md-flex justify-content-between">
+        <div class="pb-2 fade-in-up">
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <span class="subtitle">Happy Homeowners</span>
+          </div>
+          <h2 class="mt-3 mb-4 text-center">
+            What Our <i class="ff-playfair">Clients</i> Are
+            <i class="ff-playfair">Saying</i>
+          </h2>
+        </div>
+        <div class="d-flex justify-content-center d-lg-block mt-0 mt-lg-5">
+          <a href="testimonials.html" class="btn-2">More Reviews ></a>
+        </div>
+      </div>
+      <div class="swiper fade-in-up">
+        <div class="swiper-wrapper mt-4">
+          <div class="swiper-slide swiper-bg">
+            <div class="testimonial-card">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonial-5.jpg" class="testimonial-circle-2" alt="client" />
+              </div>
+              <h5 class="text-center mt-2">Maria Santos</h5>
+              <div class="d-flex justify-content-center"><span class="testimonial-job">First-Time Homebuyer, QC</span></div>
+              <p class="text-center mt-3">Benneth helped me find my first home in Novaliches at a price I could afford. The Pag-IBIG process was smooth and the team was always available to answer my questions!</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-bg">
+            <div class="testimonial-card">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonial-6.jpg" class="testimonial-circle-2" alt="client" />
+              </div>
+              <h5 class="text-center mt-2">Jose Reyes</h5>
+              <div class="d-flex justify-content-center"><span class="testimonial-job">OFW Investor, Saudi Arabia</span></div>
+              <p class="text-center mt-3">As an OFW, I was worried about buying property from abroad. Benneth made it 100% online and kept me updated every step. My family now has a beautiful home!</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-bg">
+            <div class="testimonial-card">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonial-1.jpg" class="testimonial-circle-2" alt="client" />
+              </div>
+              <h5 class="text-center mt-2">Ana Dela Cruz</h5>
+              <div class="d-flex justify-content-center"><span class="testimonial-job">Teacher, Bulacan</span></div>
+              <p class="text-center mt-3">I never thought owning a home was possible on a teacher's salary. Benneth showed me properties within my budget and helped me get approved for Pag-IBIG. Highly recommend!</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-bg">
+            <div class="testimonial-card">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonial-3.jpg" class="testimonial-circle-2" alt="client" />
+              </div>
+              <h5 class="text-center mt-2">Ramon Cruz</h5>
+              <div class="d-flex justify-content-center"><span class="testimonial-job">Investor, Cavite</span></div>
+              <p class="text-center mt-3">We bought our lot in Tagaytay as an investment. Benneth's team gave us great advice about property value growth in the area. Very professional and trustworthy!</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-bg">
+            <div class="testimonial-card">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonial-2.jpg" class="testimonial-circle-2" alt="client" />
+              </div>
+              <h5 class="text-center mt-2">Liza Mendoza</h5>
+              <div class="d-flex justify-content-center"><span class="testimonial-job">Nurse, QC</span></div>
+              <p class="text-center mt-3">The team at Benneth is so friendly and patient. They explained all the financing options clearly and never pressured me. I now have my dream home in Quezon City!</p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-bg">
+            <div class="testimonial-card">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonial-7.jpg" class="testimonial-circle-2" alt="client" />
+              </div>
+              <h5 class="text-center mt-2">Rodrigo Bautista</h5>
+              <div class="d-flex justify-content-center"><span class="testimonial-job">Engineer, Batangas</span></div>
+              <p class="text-center mt-3">Fast response, honest advice, and great listings. Benneth found us a house and lot that checked all our boxes — within budget and near good schools. Thank you!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials End -->
+
+  <!-- CTA Discover Start -->
+  <div class="bg-discover">
+    <div class="page-size">
+      <div class="container px-0">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col fade-in-up">
+            <div class="pb-2">
+              <div class="d-flex"><span class="subtitle c-white">START YOUR JOURNEY</span></div>
+              <h2 class="mt-3 mb-4 c-white">
+                Your Home Ownership <i class="ff-playfair">Journey</i> Starts
+                <i class="ff-playfair">Here</i>
+              </h2>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+              <div><img src="img/testimonial-1.jpg" alt="client" class="testimonial-circle" /></div>
+              <div><img src="img/testimonial-2.jpg" alt="client" class="testimonial-circle testimonial-margin" /></div>
+              <div><img src="img/testimonial-3.jpg" alt="client" class="testimonial-circle testimonial-margin" /></div>
+              <div><img src="img/testimonial-4.jpg" alt="client" class="testimonial-circle testimonial-margin" /></div>
+            </div>
+          </div>
+          <div class="col fade-in-up">
+            <div class="mt-4 mt-lg-5 pt-0 pt-lg-5"></div>
+            <p class="c-white mt-0 mt-lg-5 pt-0 pt-lg-5">
+              Browse exclusive listings, get a free property consultation, and take the first step toward
+              owning your dream home — with flexible Pag-IBIG and bank financing options.
+            </p>
+            <div class="d-flex gap-5">
+              <a href="contact.html" class="btn-3">Free Consult ></a>
+              <a href="property-listings.html" class="btn-1">View Listings ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CTA Discover End -->
+
+  <!-- Blog Start -->
+  <div class="bg-subtle">
+    <div class="page-size">
+      <div class="container-xl">
+        <div class="row align-items-end">
+          <div class="col-12 col-lg-5 fade-in-up">
+            <div class="pb-2 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+              <div class="d-flex"><span class="subtitle">TIPS &amp; INSIGHTS</span></div>
+              <h2 class="mt-3 mb-4 text-center text-md-start">
+                Home Buying <i class="ff-playfair">Tips</i> for
+                <i class="ff-playfair">Filipinos</i>
+              </h2>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 d-block d-lg-flex align-items-end gap-4 mt-2 mt-lg-0 fade-in-up">
+            <p class="text-center text-md-start col-lg-9">
+              Expert advice on Pag-IBIG financing, property investment, and how to navigate the
+              Philippine real estate market as a first-time buyer or OFW.
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-end">
+              <a href="blog-post.html" class="btn-2 mt-2 mt-lg-0">More Tips ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 fade-in-up mt-4">
+          <div class="col blog-col-1 fade-in-up">
+            <a href="single-post.html"><div class="blog-img-wrapper"><img src="img/blog-1.jpg" alt="Pag-IBIG guide" class="blog-img" /></div></a>
+            <div class="blog-card">
+              <a href="single-post.html"><h5 class="c-white my-4">How Pag-IBIG Financing Works</h5></a>
+              <p class="c-text-2">Benneth Team &middot; March 2026 &middot; A step-by-step guide to applying for your Pag-IBIG housing loan...</p>
+              <a href="single-post.html" class="blog-link">Read More ></a>
+            </div>
+          </div>
+          <div class="col blog-col-2 fade-in-up">
+            <a href="single-post.html"><div class="blog-img-wrapper"><img src="img/blog-2.jpg" alt="OFW guide" class="blog-img" /></div></a>
+            <div class="blog-card">
+              <a href="single-post.html"><h5 class="c-white my-4">OFW Guide to Buying a Home</h5></a>
+              <p class="c-text-2">Benneth Team &middot; February 2026 &middot; How overseas workers can buy property 100% online...</p>
+              <a href="single-post.html" class="blog-link">Read More ></a>
+            </div>
+          </div>
+          <div class="col blog-col-3 fade-in-up">
+            <a href="single-post.html"><div class="blog-img-wrapper"><img src="img/blog-3.jpg" alt="Tagaytay investment" class="blog-img" /></div></a>
+            <div class="blog-card">
+              <a href="single-post.html"><h5 class="c-white my-4">Why Invest in Tagaytay Now?</h5></a>
+              <p class="c-text-2">Benneth Team &middot; January 2026 &middot; Property values in Tagaytay continue to rise...</p>
+              <a href="single-post.html" class="blog-link">Read More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+
+  <!-- FAQs Start -->
+  <div class="bg-subtle">
+    <div class="page-size pt-0">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 g-5">
+          <div class="col-12 col-lg-6 order-1 order-lg-0 fade-in-up">
+            <div class="accordion mt-2 mt-lg-5" id="faqsAccordion1">
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingOne1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">What services does Benneth offer?</button>
+                </span>
+                <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#faqsAccordion1">
+                  <div class="accordion-body">We specialize in affordable house and lot sales, lot-only properties, Pag-IBIG and bank financing assistance, and free property consultations across Metro Manila and surrounding provinces.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingTwo1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">Can I apply for Pag-IBIG financing through Benneth?</button>
+                </span>
+                <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#faqsAccordion1">
+                  <div class="accordion-body">Yes! We assist buyers through the entire Pag-IBIG housing loan process. Monthly amortizations can start as low as &#8369;2,000/month depending on the property and loan term.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingThree1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">What areas do you cover?</button>
+                </span>
+                <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#faqsAccordion1">
+                  <div class="accordion-body">We have listings in Novaliches (Quezon City), Cavite, Bulacan, Batangas, and Tagaytay. Contact us to find properties in your preferred location.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingFour1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour1">Can OFWs buy property through Benneth?</button>
+                </span>
+                <div id="collapseFour1" class="accordion-collapse collapse" aria-labelledby="headingFour1" data-bs-parent="#faqsAccordion1">
+                  <div class="accordion-body">Absolutely! We offer 100% online processing for overseas Filipino workers. Just message us on Facebook, Viber, or WhatsApp and we will guide you through every step remotely.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingFive1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive1" aria-expanded="false" aria-controls="collapseFive1">How do I schedule a property viewing?</button>
+                </span>
+                <div id="collapseFive1" class="accordion-collapse collapse" aria-labelledby="headingFive1" data-bs-parent="#faqsAccordion1">
+                  <div class="accordion-body">Simply call or message us at 0976 090 7814 and we will arrange a convenient time for you to visit the property. Virtual tours are also available!</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingSix1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix1" aria-expanded="false" aria-controls="collapseSix1">Is the initial consultation free?</button>
+                </span>
+                <div id="collapseSix1" class="accordion-collapse collapse" aria-labelledby="headingSix1" data-bs-parent="#faqsAccordion1">
+                  <div class="accordion-body">Yes! We offer a FREE property consultation to all interested buyers. Tell us your budget and preferred location and we will find the best options for you.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-0 order-lg-1 fade-in-up">
+            <div class="mt-5 mt-sm-0">
+              <span class="subtitle">FREQUENTLY ASKED QUESTIONS</span>
+              <h2 class="mt-3 mb-4">Got Questions? <i class="ff-playfair">We</i> Have <i class="ff-playfair">Answers</i></h2>
+              <p class="mt-4">Find answers to common questions about our properties, Pag-IBIG financing, OFW services, and how to get started on your home ownership journey.</p>
+              <div class="d-flex gap-4 mt-4">
+                <a href="faqs.html" class="btn-4">More FAQs ></a>
+                <a href="contact.html" class="btn-2">Ask Us ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQs End -->
+
+  <!-- Newsletter Start -->
+  <div class="bg-subtle">
+    <div class="bg-sign-up page-size py-5">
+      <div class="container p-1 py-lg-5">
+        <div class="row">
+          <div class="col-12 col-lg-7 fade-in-up">
+            <h3 class="mt-3 mb-4 c-white text-center text-lg-start">
+              Get <i class="ff-playfair">New Listings</i> Delivered to Your <i class="ff-playfair">Inbox</i>
+            </h3>
+            <p class="mt-4 c-text-2 text-center text-lg-start">
+              Subscribe to receive new property listings, financing tips, and exclusive offers
+              — before they are posted on social media.
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 d-flex align-items-end fade-in-up">
+            <div class="newsletter-container mx-auto">
+              <div class="popup-message" id="popupMessage">
+                <div><i class="fa-solid fa-check fa-2xl"></i></div>
+                Thank you! You have subscribed successfully.
+              </div>
+              <form class="newsletter-form" action="#" id="newsletterForm">
+                <input type="email" placeholder="Your Email Address" class="email-input" />
+                <button type="submit" class="btn-newsletter"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newsletter End -->
+
+  <!-- Footer Start -->
+  <div class="bg-subtle">
+    <div class="page-size">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5 pe-lg-5">
+            <img src="img/benneth-logo.jpg" alt="Benneth Affordable House and Lot" class="footer-logo img-fluid" style="max-height:72px;object-fit:contain;" />
+            <p class="c-text-1 mt-4">
+              Helping Filipino families find affordable, quality homes across Metro Manila, Cavite, Bulacan,
+              Batangas, and Tagaytay — with flexible Pag-IBIG and bank financing.
+            </p>
+            <div class="d-flex gap-3 mt-4">
+              <a href="https://www.facebook.com/BennethAffordableHouseandLot" target="_blank" class="social-icon-32"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="viber://chat?number=09760907814" class="social-icon-32"><i class="fa-brands fa-viber"></i></a>
+              <a href="tel:09760907814" class="social-icon-32"><i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h5>Contact Us</h5>
+            <div class="d-flex gap-2 mt-4">
+              <i class="fa-solid fa-phone c-main mt-1"></i>
+              <p class="c-text-1">0976 090 7814</p>
+            </div>
+            <div class="d-flex gap-2">
+              <i class="fa-brands fa-viber c-main mt-1"></i>
+              <p class="c-text-1">0976 090 7814 (Viber / WhatsApp)</p>
+            </div>
+            <div class="d-flex gap-2">
+              <i class="fa-brands fa-facebook c-main mt-1"></i>
+              <p class="c-text-1">Benneth Affordable House and Lot</p>
+            </div>
+            <h5 class="mt-4">Address</h5>
+            <div class="d-flex gap-2 mt-4">
+              <i class="fa-solid fa-location-dot c-main mt-1"></i>
+              <p class="c-text-1">Novaliches, Quezon City, Philippines</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2">
+            <h5>Explore</h5>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="property-listings.html" class="footer-link">Listings</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="faqs.html" class="footer-link">FAQs</a></li>
+              <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+              <li><a href="blog-post.html" class="footer-link">Blog / Tips</a></li>
+              <li><a href="team.html" class="footer-link">Our Team</a></li>
+              <li><a href="contact.html" class="footer-link">Free Consultation</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4 pt-4 border-top">
+          <div class="col-12 text-center">
+            <p class="c-text-1" style="font-size:0.85em;">
+              &copy; 2026 Benneth Affordable House and Lot. All rights reserved. | Novaliches, Quezon City, Philippines
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Image Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="gallery" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+          <img id="modalImage" src="#" alt="Property Photo" class="img-fluid w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/js/swiper-bundle.min.js"></script>
+  <script src="lib/js/countUp.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/benneth.js"></script>
+</body>
+
+</html>
