@@ -1,0 +1,172 @@
+/* ======================================================
+   BENNETH AFFORDABLE HOUSE AND LOT
+   Custom Brand CSS Overrides
+   Brand Colors: Deep Blue (#1a3c6e), Bright Blue (#2563eb), Cyan (#22d3ee)
+====================================================== */
+
+/* Override primary brand color from gold to Benneth Blue */
+:root {
+    --color-main: #2563eb;
+    --color-darker: #1a3c6e;
+    --color-lighter: #93c5fd;
+    --color-subtle: #eff6ff;
+    --color-accent: #f0f9ff;
+    --color-border: #93c5fd;
+}
+
+/* Navbar logo background - remove gold tint */
+.nav-logo-wrapper {
+    background: transparent !important;
+}
+
+/* Hero slideshow background overlay - use Benneth blue gradient */
+.slideshow {
+    background: linear-gradient(135deg, #1a3c6e 0%, #2563eb 55%, #22d3ee 100%);
+}
+
+/* About card uses Benneth blue */
+.about-card {
+    background: linear-gradient(135deg, #1a3c6e, #2563eb) !important;
+}
+
+/* Buttons use Benneth blue */
+.btn-1 {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+}
+.btn-1:hover {
+    background: #1a3c6e !important;
+    border-color: #1a3c6e !important;
+}
+
+.btn-2 {
+    border-color: #2563eb !important;
+    color: #2563eb !important;
+}
+.btn-2:hover {
+    background: #2563eb !important;
+    color: #fff !important;
+}
+
+.btn-4 {
+    border-color: #2563eb !important;
+    color: #2563eb !important;
+}
+
+/* Links */
+.link-1 {
+    color: #2563eb !important;
+}
+
+/* Subtitle badge */
+.subtitle {
+    background: #dbeafe !important;
+    color: #1e40af !important;
+}
+
+/* Why Choose Us background - Benneth dark blue */
+.bg-why-choose-us {
+    background-image: url('../img/why-choose-us-1.jpg') !important;
+    background: linear-gradient(135deg, rgba(26,60,110,0.92) 0%, rgba(37,99,235,0.85) 100%), url('../img/why-choose-us-1.jpg') center/cover no-repeat;
+}
+
+/* Discover background - Benneth gradient */
+.bg-discover {
+    background: linear-gradient(135deg, #1a3c6e 0%, #2563eb 60%, #0ea5e9 100%) !important;
+}
+
+/* Accordion active color */
+.accordion-button:not(.collapsed) {
+    color: #1e40af !important;
+    background-color: #dbeafe !important;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(37,99,235,0.25) !important;
+}
+
+/* Newsletter button */
+.btn-newsletter {
+    background: #2563eb !important;
+}
+.btn-newsletter:hover {
+    background: #1a3c6e !important;
+}
+
+/* Footer logo area */
+.footer-logo {
+    display: block;
+}
+
+/* c-main utility = Benneth Blue */
+.c-main {
+    color: #2563eb !important;
+}
+
+/* Social icons */
+.social-icon-32 {
+    color: #fff !important;
+    background: rgba(255,255,255,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    transition: background 0.2s;
+}
+.social-icon-32:hover {
+    background: rgba(255,255,255,0.3) !important;
+    color: #fff !important;
+}
+
+/* Counter numbers */
+#activeAgent, #clientSatisfaction, #propertyListings {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+/* Philippine Peso sign in listings */
+.c-white {
+    color: #ffffff !important;
+}
+
+/* Gallery section title */
+.gallery-section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Floating WhatsApp / Viber CTA button */
+.floating-cta {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.floating-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    text-decoration: none;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.floating-cta a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+}
+.floating-fb {
+    background: #1877f2;
+    color: #fff !important;
+}
+.floating-viber {
+    background: #7360f2;
+    color: #fff !important;
+}
+.floating-phone {
+    background: #25d366;
+    color: #fff !important;
+}
